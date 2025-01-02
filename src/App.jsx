@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Sidebar } from './components/sidebar'
 import { Sidebar1 } from './components/sidebar1'
+import { Toggle } from './components/toggle'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
       {/* <Sidebar/> */}
-      <Sidebar1/>
+      {/* <Sidebar1/> */}
+      <Toggle/>
     </>
   )
 }
