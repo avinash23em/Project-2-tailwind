@@ -1,5 +1,20 @@
-export function Sidebar(){
-return <div>
-    <button className="transition-all duration-1000 bg-red-500 hover:bg-blue-500 p-4 hover:p-8 "> hi there avi</button>
+import { Bars } from "./icon/bars";
+
+export function Sidebar({open,setopen}){
+    if(!open){
+        return <div className="fixed top-0 left-0">
+<div className="cursor-pointer hover:bg-slate-200" onClick={()=>{setopen(!open)}}>
+    <Bars/>
+    </div>
+    </div>
+
+    }
+return <div className="w-96 h-screen bg-red-300">
+<div>
+<div className="cursor-pointer hover:bg-slate-200" onClick={()=>{setopen(!open)}}>
+    <Bars/>
+    </div>
+    </div>
 </div>
+    
 }

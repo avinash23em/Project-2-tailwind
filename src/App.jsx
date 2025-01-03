@@ -8,13 +8,13 @@ import { Toggle } from './components/toggle'
 import { Home } from './components/home'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [open,setopen] = useState(true);
 
   return (
      <div className='h-screen flex'>
-       <Sidebar/> 
+       <Sidebar open={open} setopen={setopen} /> 
       {/* <Sidebar1/> */}
-      <Home/>
+      <Home open={open}/>
       </div>
     
   )
