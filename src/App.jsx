@@ -5,16 +5,18 @@ import './App.css'
 import { Sidebar } from './components/sidebar'
 import { Sidebar1 } from './components/sidebar1'
 import { Toggle } from './components/toggle'
+import { Home } from './components/home'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      {/* <Sidebar/> */}
+     <div className='h-screen flex'>
+       <Sidebar/> 
       {/* <Sidebar1/> */}
-      <Toggle/>
-    </>
+      <Home/>
+      </div>
+    
   )
 }
 
