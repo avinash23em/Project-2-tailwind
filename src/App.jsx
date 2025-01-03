@@ -14,7 +14,7 @@ function App() {
      <div className='h-screen flex'>
        <Sidebar open={open} setopen={setopen} /> 
       {/* <Sidebar1/> */}
-      <Home open={open}/>
+      <Home />
       </div>
     
   )
